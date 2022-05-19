@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <script src="javascript.js"></script>
+  <title>Calculator</title>
+  <style> 
+
+  </style>
+</head>
+<body>
+  
+  <div id="calcMain">
+    
+    <div id="calcDisplay">0</div>
+    
+    <div id="calcBody">
+      
+      <table id="calcNums">
+        <tr>
+          <td><button class="num" id="bracket" onclick="displayNum(1)">()</button></td>
+          <td><button class="num" id="sincos" onclick="sinCos()">S</button></td>
+          <td><button class="num" id="percentage" onclick="findPercentage()">%</button></td>
+          <td rowspan="2"><button id="clear" onclick="clearDisplay()">C</button></td>
+        </tr>
+        <tr>
+          <td><button class="num" id="c1" onclick="displayNum(1)">1</button></td>
+          <td><button class="num" id="c2" onclick="displayNum(2)">2</button></td>
+          <td><button class="num" id="c3" onclick="displayNum(3)">3</button></td>
+        </tr>
+        <tr>
+          <td><button class="num" id="c4" onclick="displayNum(4)">4</button></td>
+          <td><button class="num" id="c5" onclick="displayNum(5)">5</button></td>
+          <td><button class="num" id="c6" onclick="displayNum(6)">6</button></td>
+          <td><button class="op" id="cplus" onclick="displayOperator('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="num" id="c7" onclick="displayNum(7)">7</button></td>
+          <td><button class="num" id="c8" onclick="displayNum(8)">8</button></td>
+          <td><button class="num" id="c9" onclick="displayNum(9)">9</button></td>
+          <td><button class="op" id="cmin" onclick="displayOperator('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="op" id="cdiv" onclick="displayOperator('/')">/</button></td>
+          <td><button class="num" id="c0" onclick="displayNum(0)">0</button></td>
+          <td><button class="op" id="cmul" onclick="displayOperator('*')">x</button></td>
+          <td><button id="cequal" onclick="displayResult()">=</button></td>
+        </tr>
+        
+      </table>
+      
+    </div>
+    
+  </div>
+  
+</body>
+</html>
